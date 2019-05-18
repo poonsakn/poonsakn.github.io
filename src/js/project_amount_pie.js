@@ -1,4 +1,4 @@
-google.charts.load('current', { 'packages': ['bar'] });
+google.charts.load('42', { 'packages': ['bar'] });
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
