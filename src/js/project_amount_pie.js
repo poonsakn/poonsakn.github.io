@@ -1,8 +1,8 @@
 google.charts.load('current', { 'packages': ['bar'] });
-google.charts.setOnLoadCallback(drawStuff);
+google.charts.setOnLoadCallback(drawChart);
 
-function drawStuff() {
-    var data = new google.visualization.arrayToDataTable([
+function drawChart() {
+    var data = google.visualization.arrayToDataTable([
         ['จังหวัด', 'แผนงาน'],
         ['นครนายก', 31],
         ['ปราจีนบุรี', 30],
@@ -12,21 +12,15 @@ function drawStuff() {
     ]);
 
     var options = {
-        width: 900,
-        height: 500,
-        legend: { position: 'none' },
         chart: {
-            title: 'จำนวนแผนงานแบ่งตามจังหวัด'
+            title: 'จำนวนแผนงานแบ่งตามจังหวัด',
+            subtitle: 'งบประมาณปี พ.ศ.2562'
         },
-        axes: {
-            x: {
-                0: { side: 'top', label: 'จังหวัด' } // Top x-axis.
-            }
-        },
-        bar: { groupWidth: "70%" }
+        width: 900,
+        height: 500
     };
 
     var chart = new google.charts.Bar(document.getElementById('project_amount_pie'));
-    // Convert the Classic options to Material options.
+
     chart.draw(data, google.charts.Bar.convertOptions(options));
-};
+}
