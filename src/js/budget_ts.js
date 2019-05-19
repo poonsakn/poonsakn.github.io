@@ -1,4 +1,4 @@
-google.charts.load('current', { packages: ['corechart', 'line'] });
+google.charts.load('42', { packages: ['corechart', 'line'] });
 google.charts.setOnLoadCallback(drawCurveTypes);
 
 function drawCurveTypes() {
@@ -32,8 +32,8 @@ function drawCurveTypes() {
     ]);
 
     var options = {
-        width: 1200,
-        height: 900,
+        width: 1100,
+        height: 899,
         hAxis: {
             title: 'Time',
             format: '####'
