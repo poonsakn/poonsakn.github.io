@@ -32,8 +32,8 @@ function drawCurveTypes() {
     ]);
 
     var options = {
-        width: 1100,
-        height: 899,
+        width: "100%",
+        height: 900,
         hAxis: {
             title: 'Time',
             format: '####'
