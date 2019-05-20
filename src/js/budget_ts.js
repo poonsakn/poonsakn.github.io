@@ -41,9 +41,6 @@ function drawCurveTypes() {
         vAxis: {
             title: 'งบประมาณ',
         },
-        series: {
-            1: { curveType: 'function' }
-        }
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('budget_ts'));
