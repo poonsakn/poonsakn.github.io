@@ -1,0 +1,108 @@
+html {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+body {
+    background: #FFC857;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body:before {
+    /* display: block;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 70vw;
+    height: 70vw;
+    background-color: #949494;
+    z-index: 0; */
+}
+
+h1 {
+    color: #E94F37;
+}
+
+h2 {
+    color: #393E41;
+}
+
+h4 {
+    color: #949494;
+}
+
+.container {
+    border-radius: 20%;
+    margin: 2rem;
+    padding: 0;
+}
+
+.bg-white {
+    background-color: white;
+    border-radius: 5%;
+    padding: 2rem;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m {
+    margin-left: 15rem;
+    margin-top: 7rem;
+    /* margin-right: 5rem; */
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 18px;
+    }
+    .m {
+        margin-left: 5rem;
+        margin-top: 2rem;
+        /* margin-right: 1rem; */
+    }
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.beach-shape {
+    display: block;
+    position: absolute;
+    width: 110vw;
+    color: #44BBA4;
+    /* margin: 20px; */
+    filter: url(#round);
+    z-index: -1;
+    animation-name: tide;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    overflow: hidden;
+}
+
+@keyframes tide {
+    0% {width: 100%;}
+    100% {width: 200%;}
+  }
+
+.beach::before {
+    content: "";
+    display: block;
+    padding-top: 86.6%;
+    height: 100vh;
+    background: currentColor;
+    clip-path: polygon(44% 20%, 68% 7%, 100% 0, 100% 100%, 0 100%, 0 53%, 15% 29%);
+}

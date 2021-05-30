@@ -6,82 +6,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="src/js/ministry_pie.js"></script>
-    <script type="text/javascript" src="src/js/country_pie.js"></script>
-    <script type="text/javascript" src="src/js/project_amount_pie.js"></script>
-    <script type="text/javascript" src="src/js/project_pie.js"></script>
-    <script type="text/javascript" src="src/js/budget_ts.js"></script>
-    <style>
-        .chart {
-            width: 100%;
-            min-height: 500px;
-        }
-    </style>
-    <title>กลุ่มจังหวัดภาคตะวันออก 2</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/epic-spinner.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <title>FillStop | filling with love 🥰</title>
 </head>
 
 <body>
-    <div class="container" align="center">
-        <div class="row">
-            <div class="col-md-12" align="center">
-                <div class="p-4">
-                    <h1>กลุ่มจังหวัดภาคตะวันออก 2</h1>
-                    <h3>นครนายก ปราจีนบุรี สระแก้ว จันทบุรี ตราด</h3>
-                    <br />
-                    <p>อ้างอิงข้อมูลจาก http://www.bb.go.th/web/budget/province/province_bud62/</p>
-                </div>
+    <div class="beach-shape beach"></div>
+    <div class="container">
+        <div class="m bg-white">
+            <div class="center">
+                <!-- <div class="self-building-square-spinner">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square clear"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square clear"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div> -->
             </div>
-        </div>
-        <div class="row pt-5">
-            <div class="col">
-                <h4>งบประมาณแบ่งตามกระทรวง ปี 62</h4>
-                <div id="ministry_pie" class="chart"></div>
-                <p>งบประมาณเฉลี่ยต่อกระทรวง: 661,565,071.70 บาท</p>
-            </div>
-        </div>
-        <div class="row pt-4">
-            <div class="col">
-                <h4>งบประมาณแบ่งตามจังหวัด ปี 62</h4>
-                <div id="country_pie" class="chart"></div>
-                <p>จังหวัดที่งบประมาณน้อยที่สุด: ตราด (2,828,784,744 บาท)</p>
-                <p>จังหวัดที่งบประมาณมากที่สุด: จันทบุรี (6,253,304,134 บาท)</p>
-            </div>
-        </div>
-        <div class="row pt-4">
-            <div class="col">
-                <h4>งบประมาณแบ่งตามแผนงาน ปี 62</h4>
-                <div id="project_pie" class="chart"></div>
-            </div>
-        </div>
-        <div class="row pt-4">
-            <div class="col">
-                <h4>จำนวนแผนงานแบ่งตามจังหวัด ปี 62</h4>
-                <div id="project_amount_pie" class="chart"></div>
-            </div>
-        </div>
-        <div class="row pt-4">
-            <div class="col">
-                <h4>งบประมาณรวมย้อนหลัง ปี 47-62</h4>
-                <div id="budget_ts"></div>
-            </div>
+            <h1>We are learning how to build website.</h1>
+            <h2>Please come back and check later if we are ready to build one.</h2>
+            <h4>wait. how do i center this. WHERE IS MY COMIC SANS</h4>
         </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+        version="1.1">
+        <defs>
+            <filter id="round">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                    result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
 </body>
 
 </html>
